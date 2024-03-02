@@ -7,7 +7,6 @@ body {
 
 #page {
     width: 100%;
-    align-self: center;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -130,17 +129,23 @@ body {
     width: 150px;
 }
 
-#popular-res{
+#popular-res-container{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-res{
+    display: flex;
+    width: 80%;
     margin-top: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    box-sizing: border-box;
 }
 .popular-res-item{
     background-color: #fc6011;
     height: 220px;
-    margin: 10px;
+    margin: 20px;
     width: 400px;
     border-radius: 20px;
     overflow: hidden;
